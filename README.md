@@ -16,4 +16,12 @@
 
 # 整体架构
 
-![result](F:\SystemImage\Linux\Ubuntu\result.png)
+![image-20240116232514165](I:\Desktop\培管一体化平台\培管一体化平台源码\img\image-20240116232514165.png)
+
+# 运行状态截选展示
+
+![image-20240116232423063](I:\Desktop\培管一体化平台\培管一体化平台源码\img\image-20240116232423063.png)
+
+![image-20240116232630176](I:\Desktop\培管一体化平台\培管一体化平台源码\img\image-20240116232630176.png)
+
+![image-20240116232723788](I:\Desktop\培管一体化平台\培管一体化平台源码\img\image-20240116232723788.png)
