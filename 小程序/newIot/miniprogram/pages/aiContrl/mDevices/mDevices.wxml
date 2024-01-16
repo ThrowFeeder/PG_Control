@@ -1,0 +1,42 @@
+<view class="devicesPage" hover-class="none" hover-stop-propagation="false">
+  <view class="devicesNums">
+    <view class="devicesTitle" hover-class="none" hover-stop-propagation="false">
+      当前设备数量>>
+    </view>
+    <view class="deviceTitleNum" hover-class="none" hover-stop-propagation="false">
+      {{deviceNums}}
+    </view>
+  </view>
+
+  <view class="deviceBs" wx:for='{{deviceForm}}' wx:key='index'>
+    <deviceB deviceName="{{item.name}}" deviceClassName="{{item.class}}"
+      bindtap="select" data-id="{{item._id}}"
+      selected="{{item.selected}}"
+    >
+    </deviceB>
+  </view>
+  <!-- <button calss="addDevice"  bindtap = "addDeviceFunc">添加设备</button> -->
+  <view class="addDevice" hover-class="none" hover-stop-propagation="false"
+   style="background-color: #fff; padding-top: 5px;"
+  >
+
+    <button class="addDeviceButn" bindtap="modaladd">添加</button>
+    <button class="moveDeviceButn" bindtap="deleteModal">删除</button>
+
+  </view>
+</view>
+
+<modal hidden="{{hiddenmodalput}}" title="添加设备" confirm-text="完成" cancel-text="取消" bindcancel="modalinput" bindconfirm="confirmAdd">
+  <view>
+    <text style="color:blue">设备名》</text>
+    <input type='text' placeholder="请输入内容" bindinput="setInputVal" 
+    value="{{val.name}}"
+    data-prop="name" auto-focus />
+  </view>
+  <view>
+    <text style="color:blue">设备型号》</text>
+    <input type='text' placeholder="请输入内容" bindinput="setInputVal" 
+    value="{{val.class}}"
+    data-prop="class" auto-focus />
+  </view>
+</modal>

@@ -1,0 +1,85 @@
+<!--
+ * @Author: error: git config user.name && git config user.email & please set dead value or install git
+ * @Date: 2022-05-23 15:08:21
+ * @LastEditors: error: git config user.name && git config user.email & please set dead value or install git
+ * @LastEditTime: 2022-05-31 09:47:57
+ * @FilePath: \newIot\miniprogram\pages\conTrl\conTrl.wxml
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+
+
+<view class="ripple" style="{{rippleStyle}}"></view>
+<view class="conTrlPage"   bindtouchstart="containerTap"  hover-class="none" hover-stop-propagation="false">
+    
+   <view class="ctrlView" style="height: {{viewstyle.motoheight}}rpx;" hover-class="none" hover-stop-propagation="false">
+      <ctlView ctltitle="电机" ></ctlView>
+      <view class="switchAll" hover-class="none" hover-stop-propagation="false">
+         <switchCtl id="switchCtl" class="switch-Ctl" switchtitle="power"  bindtap = "motopower"> </switchCtl>
+         
+      </view>
+         <view class="body-view">
+            <view class="" hover-class="none" hover-stop-propagation="false">
+               速度
+            </view>
+            <slider  bindchange="sliderctl"  show-value value = "80"/>
+         </view>    
+         <view class="motoFxCtrl" hover-class="none" hover-stop-propagation="false">
+            
+            <view class="row">
+              <view class="btn">
+               <i class="iconfont icon-xiangzuo" bindtap = "sendLeftMoto"></i>
+              </view>
+   
+              <view class="btn">
+               <i class="iconfont icon-xiangyou"  bindtap = "sendRightMoto"></i>
+              </view>
+            </view>
+            
+        </view>
+   </view>
+
+
+   <view class="ctrlView" style="height: {{viewstyle. waterpumpheight}}rpx;" hover-class="none" hover-stop-propagation="false">
+      <ctlView ctltitle="水泵" ></ctlView>
+      
+       <button style=" background-color: aquamarine;margin-top:50rpx;"  bindtap="waterPumPub">打开水泵</button>
+   </view>
+  
+
+
+   <view style="height: {{viewstyle.parameterheight}}rpx;" class="ctrlView" hover-class="none" hover-stop-propagation="false">
+      <ctlView ctltitle="设置参数" ></ctlView>
+      <!-- 温度 -->
+      <view class="paraView" hover-class="none" hover-stop-propagation="false">
+         <view class="parabox" hover-class="none" hover-stop-propagation="false">
+            <picker mode ="multiSelector"
+            bindchange="bindMultPickerTempColumnChange"
+            value="{{tempSelecIndexNum}}"
+            range="{{tempSelectArr}}"
+            	 >
+               <view class="valuetext" hover-class="none" hover-stop-propagation="false">
+                  {{paraTitle[0]}} 
+                  <view class="arrvalue" selectable="false" space="false" decode="false">
+                     {{tempCurColumIdex[0] + 1}}° -  {{tempCurColumIdex[1] + 2}}°
+                  </view>
+               </view>
+             </picker>
+         </view>
+               <!-- 湿度 -->
+         <view class="parabox" hover-class="none" hover-stop-propagation="false">
+            <picker mode ="multiSelector" bindchange = "bindMultPickerRhColumnChange" value="{{rhSelecIndexNum}}" range="{{rhSelectArr}}">
+               <view class="valuetext" hover-class="none" hover-stop-propagation="false">
+                  {{paraTitle[1]}}
+                  <view class="arrvalue" selectable="false" space="false" decode="false">
+                     {{rhCurColumIdex[0]+1}}% -  {{rhCurColumIdex[1]+2 }}%
+                  </view>
+               </view>
+             </picker>
+         </view>
+           
+         
+      </view>
+   </view>
+
+    
+</view>

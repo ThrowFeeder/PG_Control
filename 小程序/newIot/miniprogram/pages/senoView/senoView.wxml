@@ -1,0 +1,128 @@
+
+
+<view class="ripple" style="{{rippleStyle}}"></view>
+
+
+<view class="senoViewPage"   bindtouchstart="containerTap">
+
+    <!-- 顶部导航栏 -->
+    <view class="swiper-tab">
+ 
+        <view class="tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">温湿度</view>
+         
+        <view class="tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">状态栏</view>
+         
+        <!-- <view class="tab-item {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">摄像头</view> -->
+         
+    </view>
+
+    <!-- 内容 -->
+    <swiper class="swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange">
+ 
+        <swiper-item>
+         
+            <view style = "height:{{senostyle.dht11height}}rpx;" class="senoView " hover-class="" hover-stop-propagation="false">
+                <!-- 数据订阅测试 -->
+                <ctlView ctltitle="温湿度"  bindtap = "dhtSeno_sub"></ctlView>
+  
+      
+           <view class="tempDataView" hover-class="none" hover-stop-propagation="false">
+              <view class="senoPic" hover-class="none" hover-stop-propagation="false">
+                  <image class="" src="../../png/wendu.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
+                  
+                  </image>
+                  <view class="senoPicText" hover-class="none" hover-stop-propagation="false">
+                      {{submsg.sub_dht_mg.TEMPtitle}}:{{submsg.sub_dht_mg.TEMPvalue}}°
+                  </view>
+              </view>
+              
+           </view>
+           
+           <view class="rhDataView" hover-class="none" hover-stop-propagation="false">
+              <view class="senoPic" hover-class="none" hover-stop-propagation="false">
+                  <image class="" src="../../png/shidu.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
+                  
+                  </image>
+                  <view class="senoPicText" hover-class="none" hover-stop-propagation="false">
+                      {{submsg.sub_dht_mg.RHtitle}}:{{submsg.sub_dht_mg.RHvalue}}%
+                      
+                  </view>
+              </view>
+             
+          </view>
+      
+      
+          </view>
+      
+        
+          <view style = "height:{{senostyle.dhtechartheight}}rpx;" class="senoView" >
+            <ecCanvas id="mychartDome" canvas-id="mychart-line" ec="{{ ec }}"></ecCanvas>
+          </view>
+      
+        </swiper-item>
+         
+
+        <!-- 土壤湿度 -->
+        <swiper-item>
+         
+        <view style = "height: {{senostyle.soilMheight}}rpx;" class="senoView" hover-class="none" hover-stop-propagation="false">
+            <ctlView ctltitle="土壤状态" ></ctlView>
+
+            <view class="yl69SenoDataView" hover-class="none" hover-stop-propagation="false">
+                <view class="senoPic" hover-class="none" hover-stop-propagation="false">
+                    <image class="" src="../../png/wendu.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
+                    
+                    </image>
+                    <view class="senoPicText" hover-class="none" hover-stop-propagation="false">
+                        {{submsg.sub_yl69_mg.YLStateTitle}}:{{submsg.sub_yl69_mg.YLvalue}}
+                    </view>
+                </view>
+            </view>
+
+        </view>
+
+        <view style = "height: {{senostyle.soilMechartheight}}rpx;" class="senoView" hover-class="none" hover-stop-propagation="false">
+            <ctlView ctltitle="水泵状态" ></ctlView>
+            
+            <view class="yl69SenoDataView" hover-class="none" hover-stop-propagation="false">
+                <view class="senoPic" hover-class="none" hover-stop-propagation="false">
+                    <image class="" src="../../png/wendu.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
+                    
+                    </image>
+                    <view class="senoPicText" hover-class="none" hover-stop-propagation="false">
+                        {{submsg.sub_waterP_status.waterStatus}}
+                    </view>
+                </view>
+            </view>
+
+        </view>
+         
+        </swiper-item>
+         
+        <!-- <swiper-item>
+         
+        <view style = "height: {{senostyle.cameraheight}}rpx;" class="senoView" hover-class="none" hover-stop-propagation="false">
+            
+        </view>
+         
+    
+         
+        </swiper-item> -->
+         
+        </swiper>
+        
+      
+     
+
+
+
+
+
+
+
+
+
+
+
+   
+</view>

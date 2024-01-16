@@ -1,0 +1,5 @@
+/* pages/compoent/ctlView/ctlView.wxss */
+
+.controlViewCompon {
+  width: auto;
+}

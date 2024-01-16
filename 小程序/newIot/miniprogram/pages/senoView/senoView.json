@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "ctlView":"../compoent/ctlView/ctlView",
+    "ecCanvas": "../../ec-canvas/ec-canvas"
+  }
+}

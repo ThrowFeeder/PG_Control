@@ -1,0 +1,72 @@
+{
+  "id": "3426678",
+  "name": "方向键",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1308255",
+      "name": "107方向_左下",
+      "font_class": "107fangxiang_zuoxia",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "1278",
+      "name": "单图排列",
+      "font_class": "dantupailie",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "1347",
+      "name": "左上",
+      "font_class": "zuoshang",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "1348",
+      "name": "向上",
+      "font_class": "xiangshang",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "1349",
+      "name": "右上",
+      "font_class": "youshang",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "1351",
+      "name": "向下",
+      "font_class": "xiangxia",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "1352",
+      "name": "右下",
+      "font_class": "youxia",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "1353",
+      "name": "向左",
+      "font_class": "xiangzuo",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "6884483",
+      "name": "向右",
+      "font_class": "xiangyou",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    }
+  ]
+}

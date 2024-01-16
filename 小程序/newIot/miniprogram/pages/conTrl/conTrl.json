@@ -1,0 +1,12 @@
+{
+  "component":true,
+  "usingComponents": {
+   "ctlView":"../compoent/ctlView/ctlView",
+   "switchCtl":"../compoent/switch/switch",
+   "triangleCtl":"../compoent/triangleCtr/triangleCtr"
+  }
+  
+   
+  
+  
+}

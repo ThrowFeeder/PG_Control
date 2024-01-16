@@ -1,0 +1,112 @@
+/* pages/conTrl/conTrl.wxss */
+@import "/style/iconfont.wxss";
+.ctrlView{
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50rpx;
+  padding: 20rpx 0;
+  box-shadow: 0px 2px 5px 5px #cccccc;
+  border-radius: 20rpx;
+}
+
+/* 触摸特效
+ */
+
+ 
+ page{height:100%}
+.ctrlView{
+    /* width:100%; */
+    height:100%;
+    overflow: hidden
+}
+.ripple {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 100%;
+    height:10px;
+    width:10px;
+    margin-top: -90px;
+    position: absolute;
+    -webkit-transform: scale(0);
+    overflow: hidden
+}
+@-webkit-keyframes ripple {
+    100% {
+    -webkit-transform: scale(12);
+    transform: scale(12);
+    background-color: transparent;
+    }
+}
+
+.row {
+  width: 100%;
+  height: 100px;
+  clear: both;
+}
+.row .btn {
+  float: left;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+.row .btn .iconfont {
+  font-size: 5em;
+  color: #e17055;
+}
+
+
+
+.switchAll {
+  width: 40%;
+  float: left;
+}
+
+.motoFxCtrl {
+  position: absolute;
+  width: 100%;
+  height: 300rpx;
+  margin-left: 140rpx;
+  bottom: 0px;
+ 
+}
+
+.body-view {
+  width: 50%;
+  float: right;
+  margin-top: 30rpx;
+}
+
+.paraView{
+  width: 100%;
+  height: 80%;
+}
+.tempvaluetext {
+  float: left;
+}
+.body-temp-view {
+  float: right;
+  width: 70%;
+
+
+}
+
+.parabox {
+width: 80%;
+margin: 0 auto;
+margin-top: 40rpx;
+}
+
+.valuetext {
+margin-left: 40rpx;
+font-size: 40rpx;
+width: 90%;
+}
+.arrvalue{
+ 
+  float: right;
+  width: 250rpx;
+  height: 50rpx;
+  text-align: center;
+  box-shadow: 0px 1px 1px 1px #cccccc;
+}

@@ -1,0 +1,130 @@
+page{height:100%}
+.senoViewPage{
+    width:100%;
+    height:100%;
+    overflow: hidden
+}
+.ripple {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 100%;
+    height:10px;
+    width:10px;
+    margin-top: -90px;
+    position: absolute;
+    -webkit-transform: scale(0);
+    overflow: hidden
+}
+@-webkit-keyframes ripple {
+    100% {
+    -webkit-transform: scale(12);
+    transform: scale(12);
+    background-color: transparent;
+    }
+}
+
+.senoView {
+
+   
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    height: 700rpx;
+    margin: 0 auto;
+    margin-top: 50rpx;
+    padding: 20rpx 0;
+    box-shadow: 0px 2px 5px 5px #cccccc;
+    border-radius: 20rpx;
+
+   
+}
+
+
+.tempDataView {
+    float: left;
+    width: 47%;
+    height: 400rpx;
+    margin-top: 30rpx;
+    padding: 10rpx;
+    
+}
+
+.yl69SenoDataView{
+    
+    width: 47%;
+    height: 400rpx;
+    margin: 0 auto;
+    margin-top: 30rpx;
+    padding: 10rpx;
+}
+.rhDataView {
+    float: right;
+    width: 47%;
+    height: 400rpx;
+    margin-top: 30rpx;
+    padding: 10rpx;
+    
+}
+.senoPic {
+    width: 70%;
+    height: 50%;
+   margin: 0 auto;
+}
+
+.senoPic image {
+    width:100%;
+    height: 100%;
+}
+
+.senoPicText {
+
+   text-align: center;
+}
+
+
+
+.swiper-tab {
+ 
+    display: flex;
+     
+    flex-direction: row;
+     
+    line-height: 80rpx;
+     
+    /* border-bottom: 2rpx solid #777; */
+     
+    }
+     
+     
+    .tab-item {
+     
+    width: 33.3%;
+     
+    text-align: center;
+     
+    font-size: 15px;
+     
+    
+     
+    }
+     
+     
+    .swiper {
+    max-height: auto;
+    height: 1200rpx;
+     
+     
+    }
+     
+     
+    .on {
+     
+    color:#67ad8d;
+     
+    border-bottom: 5rpx solid #67ad8d;
+     
+    }
+
+
+  

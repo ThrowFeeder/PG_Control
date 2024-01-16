@@ -1,0 +1,20 @@
+<view class="deviceBlock" 
+  style="background-color: {{selected ? '#e17055': 'aquamarine'}}"
+  hover-class="none" hover-stop-propagation="false">
+    <view class="deviceBOne" hover-class="none" hover-stop-propagation="false">
+       <view class="deviceName" hover-class="none" hover-stop-propagation="false">
+            {{deviceName}}
+       </view>
+       <view class="deviceState" hover-class="none" hover-stop-propagation="false">
+            <!-- <view class="deviceStateTitle" hover-class="none" hover-stop-propagation="false">
+                当前状态
+            </view> -->
+            <!-- <text class="stateView" >{{dState === "0" ? dState = '离线' : dState = '在线'}}</text> -->
+            <!-- <button class="stateView" {{properties.dState.value}} ==="0"？ style = "background-color:red;"  : style = "background-color: rgb(21, 242, 21);"></button> -->
+            
+            <view class="deviceClass" hover-class="none" hover-stop-propagation="false">
+                设备型号》{{deviceClassName}}
+            </view>
+        </view>
+    </view>
+</view>

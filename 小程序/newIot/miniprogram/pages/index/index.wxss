@@ -1,0 +1,77 @@
+@import "/style/iconfont.wxss";
+
+.motionView {
+  width: 90%;
+  height: 500rpx;
+  margin: 0 auto;
+  margin-top: 50rpx;
+  padding: 20rpx 0;
+  box-shadow: 0px 2px 5px 5px #cccccc;
+  border-radius: 20rpx;
+}
+
+/* 触摸特效
+ */
+
+ page{height:100%}
+.motionPage{
+    width:100%;
+    height:100%;
+    overflow: hidden
+}
+.ripple {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 100%;
+    height:10px;
+    width:10px;
+    margin-top: -90px;
+    position: absolute;
+    -webkit-transform: scale(0);
+    overflow: hidden
+}
+@-webkit-keyframes ripple {
+    100% {
+    -webkit-transform: scale(12);
+    transform: scale(12);
+    background-color: transparent;
+    }
+}
+
+.motionImg {
+  width: 100%;
+  height:100% ;
+}
+
+.motionCtrl {
+  display: flex;
+  width: 90%;
+  height: 600rpx;
+  margin: 0 auto;
+  margin-top: 20rpx;
+ 
+  padding: 20rpx 0;
+  box-shadow: 0px 2px 5px 5px #cccccc;
+  border-radius: 20rpx;
+
+
+}
+
+
+.row {
+  width: 100%;
+  height: 100px;
+  margin-left: 10rpx;
+  clear: both;
+}
+.row .btn {
+  float: left;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+.row .btn .iconfont {
+  font-size: 5em;
+  color: #e17055;
+}
+

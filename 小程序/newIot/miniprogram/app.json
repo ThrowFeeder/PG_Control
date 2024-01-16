@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/audioCtl/audioCtl",
+    "pages/conTrl/conTrl",
+    "pages/senoView/senoView",
+    "pages/index/index",
+    "pages/aiContrl/mDevices/mDevices",
+    "pages/bar/index",
+    "pages/aiContrl/aiContrl",
+    "pages/compoent/ctlView/ctlView"
+   
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "培管一体化平台",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "plugins": {
+    "WechatSI": {
+      "version": "0.3.5",
+      "provider": "wx069ba97219f66d99"
+    }
+},
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "png/aq.png",
+        "iconPath": "png/aq.png",
+        "pagePath": "pages/index/index",
+        "text": "监控"
+      },
+      {
+        "selectedIconPath": "png/aq.png",
+        "iconPath": "png/aq.png",
+        "pagePath": "pages/conTrl/conTrl",
+        "text": "操作台"
+      },
+      {
+        "selectedIconPath": "png/aq.png",
+        "iconPath": "png/aq.png",
+        "pagePath": "pages/senoView/senoView",
+        "text": "视窗"
+      },
+      {
+        "selectedIconPath": "png/aq.png",
+        "iconPath": "png/aq.png",
+        "pagePath": "pages/audioCtl/audioCtl",
+        "text": "语音控制室"
+      },
+      {
+        "selectedIconPath": "png/aq.png",
+        "iconPath": "png/aq.png",
+        "pagePath": "pages/aiContrl/aiContrl",
+        "text": "我"
+      }
+    ]
+  }
+}

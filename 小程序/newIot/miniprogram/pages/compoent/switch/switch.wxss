@@ -1,0 +1,7 @@
+/* pages/compoent/switch/switch.wxss */
+
+.switchView{
+    display: flex;
+    flex-direction: column;
+    padding: 20rpx 80rpx;
+  } 

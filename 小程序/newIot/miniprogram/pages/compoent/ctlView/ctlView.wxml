@@ -1,0 +1,9 @@
+<!-- button -->
+
+<view class="controlViewCompon" hover-class="none" hover-stop-propagation="false">
+<!-- 按钮 -->
+        <button>
+            {{ctltitle}}
+        </button>
+        
+</view>

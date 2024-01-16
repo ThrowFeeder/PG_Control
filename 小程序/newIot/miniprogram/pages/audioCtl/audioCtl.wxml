@@ -1,0 +1,22 @@
+<view class="msgBox">
+    <view class="item" wx:for="{{ msgs}}">
+     {{item}}
+    </view>
+  </view>
+<view class="yuyinWrap">
+  
+  <textarea class='yuyinCon' placeholder='请输入内容' value='{{content}}'   ></textarea>
+ 
+  <!--  -->
+  <view class='buttonStyle'>
+    <button class="yuyinBtn {{recordState == true ? 'yuyinBtnBg':''}}"  style="width:60%;;" bindtouchstart="touchStart" bindtouchend="touchEnd">
+      <text wx:if="{{recordState == false}}">按住 说话</text>
+      <text wx:else>松开 结束</text>
+    </button>
+  </view>
+  <!-- 开始语音 弹出语音图标表示正在录音 -->
+  <cover-view class="startYuyinImage" wx:if="{{recordState == true}}">
+    <cover-image src="../../png/user.jpg"></cover-image>
+    <cover-view>开始语音</cover-view>
+  </cover-view>
+</view>

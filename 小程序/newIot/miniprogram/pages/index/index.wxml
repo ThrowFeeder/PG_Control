@@ -1,0 +1,46 @@
+<!--
+ * @Author: error: git config user.name && git config user.email & please set dead value or install git
+ * @Date: 2022-05-23 15:08:21
+ * @LastEditors: error: git config user.name && git config user.email & please set dead value or install git
+ * @LastEditTime: 2022-05-31 09:05:44
+ * @FilePath: \newIot\miniprogram\pages\index\index.wxml
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+
+<view class="ripple" style="{{rippleStyle}}"></view>
+<view class="motionPage"    bindtouchstart="containerTap" >
+    <view class="motionView" hover-class="none" hover-stop-propagation="false">
+        <image src="http://192.168.43.94:8080/?action=stream"  class="motionImg"></image>
+    </view>
+    
+
+    <view class="motionCtrl" hover-class="none" hover-stop-propagation="false">
+            <view class="row">
+              <view class="btn"></view>
+              <view class="btn">
+                <i class="iconfont icon-xiangzuo" bindtap = "sendLeftGear"></i>
+              </view>
+              <view class="btn"></view>
+            </view>
+            <view class="row">
+              <view class="btn">
+                <i class="iconfont icon-xiangshang" bindtap = "sendUpGear"></i>
+          
+              </view>
+              <view class="btn">
+                <i class="iconfont icon-dantupailie"></i>
+              </view>
+              <view class="btn">
+                <i class="iconfont icon-xiangxia" bindtap = "sendDownGear"></i>
+              </view>
+            </view>
+            <view class="row">
+              <view class="btn"></view>
+              <view class="btn">
+                <i class="iconfont icon-xiangyou"  bindtap = "sendRightGear"></i>
+              </view>
+              <view class="btn"></view>
+            </view>
+        </view>
+   
+</view>

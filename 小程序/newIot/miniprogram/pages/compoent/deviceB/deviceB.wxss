@@ -1,0 +1,37 @@
+/* pages/compoent/deviceB/deviceB.wxss */
+
+.deviceBlock {
+    width: 300rpx;
+    height: 200rpx;
+    margin-top: 40rpx;
+    margin-left: 50rpx;
+    box-shadow: 0px 2px 5px 5px #cccccc;
+    border-radius: 20rpx;
+    text-align: center;
+    float: left;
+    background-color: aquamarine;
+}
+
+.deviceState {
+   width: 100%;
+   margin-top: 20rpx;
+}
+
+.deviceName {
+    margin-top: 40rpx;
+    font-weight:bold;
+    text-align: center;
+  
+}
+
+.deviceStateTitle{
+    width: 50%;
+    float: left;
+   
+}
+.stateView {
+    width:60rpx !important;
+    height: 30rpx;
+    margin-top: 5rpx;
+    float: right;
+}
