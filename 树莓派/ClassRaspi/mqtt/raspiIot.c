@@ -21,14 +21,14 @@
 #endif
 
 #define NUM_THREADS 11
-#define ADDRESS     "41.198.29.15:1883" //mqtt������ 
+#define ADDRESS     "4.1.2.5:1883" //mqtt������ 
 
 
 #define PAYLOAD     "Hello Man, Can you see me ?!" //
 #define QOS         1
 #define TIMEOUT     10000L
-#define USERNAME    "admin"
-#define PASSWORD    "public"
+#define USERNAME    "name"
+#define PASSWORD    "pwd"
 #define DISCONNECT  "out"
 #define MAX_SAVE_DATA 512
 
